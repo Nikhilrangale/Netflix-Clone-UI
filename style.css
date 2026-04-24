@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/img/bg.jpg");
+    height: 90vh;
+    background-size: max(1000px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.74;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    margin: auto;
+
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martle sans', sans-serif;
+    display: flex;
+    height: calc(100% - 65px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    width: 42vw;
+}
+
+.hero>:nth-child(2) {
+    font-weight: 700;
+    font: 40px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.separation {
+    position: relative;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(203, 6, 6);
+
+    border-radius: 10px;
+    margin: 0 auto;
+    clip-path: ellipse(150% 100%);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+
+}
+
+@media (max-width:925px) {
+    .hero {
+        text-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons {
+        width: 12vw;
+    }
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5)
+}
+
+.btn-red {
+    background-color: rgb(242, 25, 25);
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5)
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    /* max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center; */
+}
+
+
+
+/* .text{
+margin: 20px;
+font-size: 23px;
+font-weight: 600;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+} */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 7rem;
+}
+
+.trending {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none;
+    max-width: 75vw;
+    margin-left: 132px;
+    margin-right: 145px;
+}
+
+.trending {
+    -webkit-scrollbar {
+        display: none;
+    }
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.card-number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}
+
+
+
+
+.feq h2 {
+    padding: 0px 12.3vw;
+    font-size: 20px;
+}
+
+.feq {
+    background-color: black;
+    color: white;
+}
+
+.feqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.feqbox {
+    color: white;
+    transition: all 1s ease-in-out;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    max-width: 72vw;
+    margin: 12px auto;
+    justify-content: space-between;
+}
+
+footer {
+    font-size: 12px;
+    color: rgba(216, 212, 212, 0.878);
+    max-width: 100vw;
+    margin: auto;
+    padding: 44px 0px;
+    font-weight: 400;
+    max-width: 72vw;
+
+
+}
+
+footer .questions {
+    font-size: 12px;
+    padding: 34px 0px;
+    margin-left: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgba(216, 212, 212, 0.878);
+}
+
+.footer a {
+    font-size: 12px;
+    /* color: white; */
+    color: rgba(216, 212, 212, 0.878);
+    max-width: 72vw;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    color: rgba(213, 203, 203, 0.799);
+}
+
+.container2 {
+    background-color: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 75vw;
+    height: 40vh;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.box2 {
+    background-color: #221929;
+    flex: 1 1 200px;
+    max-width: 220px;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+    border-radius: 8px;
+
+}
+
+.box2 h3 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.box2 p {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 400;
+    height: 10px;
+    line-height: 1.4;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.email1 {
+    padding: 20px 110px 8px 110px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5)
+}
+
+input[type=text]::placeholder {
+    color: #aaa;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.email2 {
+    background-color: rgb(242, 25, 25);
+    color: white;
+    padding: 12px 32px 8px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
